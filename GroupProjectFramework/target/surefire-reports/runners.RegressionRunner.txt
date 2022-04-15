@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: runners.RegressionRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.165 s <<< FAILURE! - in runners.RegressionRunner
+runners.RegressionRunner.initializationError  Time elapsed: 0.01 s  <<< ERROR!
+java.lang.IllegalArgumentException: 
+Couldn't create a file output stream for 'target\reports'.
+Make sure the the file isn't a directory.
+
+Note: This usually happens when plugins write to colliding paths.
+For example: 'json:target/cucumber/report.json, html:target/cucumber'
+You can fix this by making the paths do no collide.
+For example: 'json:target/cucumber/report.json, html:target/cucumber/report.html'
+The details are in the stack trace below:
+Caused by: java.io.FileNotFoundException: target\reports (Access is denied)
+

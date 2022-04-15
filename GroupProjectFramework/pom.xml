@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>GroupProjectFramework</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>6.10.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>6.10.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>4.2.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.javafaker</groupId>
+            <artifactId>javafaker</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi   provides pure
+        Java libraries for reading and writing files
+        in Microsoft Office formats, such as Word, PowerPoint and Excel. -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-core</artifactId>
+            <version>6.10.4</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.12</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>3.4.0</version>
+                <executions>
+                    <execution>
+                        <id>execution</id>
+                        <!-- which phase this plugin should be executed-->
+                        <phase>verify</phase>
+                        <goals>
+                            <!--specific goal -->
+                            <goal>generate</goal>
+                        </goals>
+                        <!--  cofigs:  name, where the plugin should find cucumber.json,
+                        where final nice report should ne created(generated)-->
+                        <configuration>
+                            <projectName>Nice Cucumber Report${project.version}</projectName>
+                            <!-- where the nice report should be generated?-->
+                            <!-- from pom file project build directory is target folder-->
+                            <!-- "create a new folder under a target"-->
+                            <outputDirectory>${project.build.directory}/CucumberReport</outputDirectory>
+                            <!-- which cucumber junit statistic from runner class should i use-->
+                            <cucumberOutput>${project.build.directory}/cucumber-reports/cucumber.json</cucumberOutput>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+
+            <!-- sure-fire plugin is used to specify what tests should be run
+            as a part of test(goal)
+            by default maven uses surefire plugin to execute tests.
+            test classes that have names end with Test, even if plugin is removed (default behaviour-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version>
+                <!--                <configuration>-->
+                <!--                    <parallel>methods</parallel> &lt;!&ndash; can be classes &ndash;&gt;-->
+                <!--                    <threadCount>2</threadCount>-->
+                <!--                </configuration>-->
+                <!--                                to specify what tests should be run as part of test-->
+                <configuration>
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <excludes>
+                        <exclude>none</exclude>
+                    </excludes>
+                    <!--  which test do you want to include to run in test phase-->
+                    <includes>
+                        <!-- list all runner classes-->
+                        <include>**/SmokeRunner.java</include>
+                        <include>**/RegressionRunner.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
