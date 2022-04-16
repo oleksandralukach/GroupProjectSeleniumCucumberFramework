@@ -6,6 +6,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import utilities.DBUtils;
 import utilities.Driver;
 import utilities.EnvironmentManager;
 
@@ -39,6 +40,7 @@ public class Hooks {
             e.getMessage();
         }
 
+        DBUtils.close(); //close connection to DB
         Driver.closeDriver();
     }
 }

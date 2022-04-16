@@ -12,7 +12,7 @@ public class DBUtils {
 
     private static Connection connection; //interface implemented by driver in our case mysql
     private static Statement statement;
-    private static final String JDBC_URL = "jdbc:mysql://3.129.60.236:3306/digitalbank";
+    private static final String JDBC_URL = ConfigReader.getProperty("jdbc_url");
     // or: String url = "jdbc:mysql://3.129.60.236:3306/digitalbank?user=digitalbank&password=Demo123!";
 
     //Singleton - only one connection can be created in a time.
@@ -20,7 +20,7 @@ public class DBUtils {
     public static void openDBConnection() {
         try {
             if (connection == null) {
-                connection = DriverManager.getConnection(JDBC_URL + "?useSSL=false", "digitaluser", "Demo123!");
+                connection = DriverManager.getConnection(JDBC_URL , "digitaluser", "Demo123!");
                 statement = connection.createStatement();
             }
         } catch (SQLException e) {
@@ -40,6 +40,17 @@ public class DBUtils {
             Assert.fail("Can't close connection to DB");
         }
     }
+    public static ResultSet query(String query) {
+        if (connection == null) openDBConnection();
+
+        try {
+            return statement.executeQuery(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+            Assert.fail("Not able to execute query");
+        }
+        return null;
+    }
 
     public static List<String> getColumnNames(ResultSet rs) {
         List<String> columnNames = new ArrayList<>();
@@ -54,29 +65,20 @@ public class DBUtils {
             e.printStackTrace();
             Assert.fail(e.getLocalizedMessage());
         }
+
         return columnNames;
     }
 
-    public static ResultSet query(String query) {
-        if (connection == null) openDBConnection();
-
-        try {
-            return statement.executeQuery(query);
-        } catch (SQLException e) {
-            e.printStackTrace();
-            Assert.fail("Not able to execute query");
-        }
-        return null;
-    }
-
+//key is column name, value is data from that column
     public static List<Map<String, Object>> convertResultSet(ResultSet rs) {
-        List<Map<String, Object>> table = new ArrayList<>();
+
+        List<Map<String, Object>> table = new ArrayList<>(); //table.size() return how many rows you have(each map is a row)
         List<String> columnNames = getColumnNames(rs);
 
         //Populate table from result set
         //Iterate through each row (result set)
         while (true) {
-            //for each row we create a new Hashmap/ one row=one map(key is column name, value is value from that column)
+            //for each row we create a new Hashmap/ one row=one map(key is column name, value is data from that column)
             Map<String, Object> row = new HashMap<>();
             try {
                 if (!rs.next()) break; //Moves the cursor forward one row from its current position, until rows exist
@@ -91,32 +93,40 @@ public class DBUtils {
                 e.printStackTrace();
             }
         }
+//close result set after we are done
+        try{
+            rs.close();
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
         return table;
     }
 
     //get column names by using result Set metadata
     public static void main(String[] args) {
-
-        openDBConnection();
-        ResultSet rs = query("SELECT * FROM account");
+//we dont need to open connection explicitly as method query() has it
+        ResultSet rs = DBUtils.query("SELECT id FROM account WHERE name = 'Personal Savings';");
         List<String> columns = DBUtils.getColumnNames(rs);
         columns.forEach(System.out::println);
 
-        List<Map<String, Object>> table = convertResultSet(rs);
+        List<Map<String, Object>> table = DBUtils.convertResultSet(rs);
+        String s = String.valueOf(table.get(0).get("id")); //first get -> return map in position, second get -> return value of provided key
+        System.out.println(s);
         table.forEach(System.out::println);
+
 
         // to find specific value you can loop through table of maps
         // but better just to create specific query:
         // ResultSet rs = query("SELECT payment_amount FROM account WHERE account_number ="46856765002");
-        double expectedPaymentAmount = 0.0;
-        for (Map<String,Object> map : table) {
-            if (map.get("account_number").toString().equals("46856765002")){
-                double actualAmount = (double) map.get("payment_amount");
-                Assert.assertEquals(expectedPaymentAmount,actualAmount);
-            }
-        }
+//        double expectedPaymentAmount = 0.0;
+//        for (Map<String, Object> map : table) {
+//            if (map.get("account_number").toString().equals("46856765002")) {
+//                double actualAmount = (double) map.get("payment_amount");
+//                Assert.assertEquals(expectedPaymentAmount, actualAmount);
+//            }
+//        }
 
-       DBUtils.close();
+        DBUtils.close();
 
 
         //practice all the sequence of steps:
