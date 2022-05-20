@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4b10d336-af51-47c5-adef-c0a7095bd2e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/food_delivery_requirements.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/dbModels/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/step_defs/ExtentReportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/database/DBTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/database/ResultSetHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/dbModels/Transaction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/dbModels/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/dbModels/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/runners/RegressionRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/runners/RegressionRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/runners/SmokeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/step_defs/BasicValidationSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/step_defs/BasicValidationSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/step_defs/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/step_defs/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/DBUtilV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/database/DBUtilV2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/DBUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/database/DBUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/EnvironmentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/EnvironmentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/SauceLabsParallel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/SauceLabsParallel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/features/BasicValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/features/BasicValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/GroupProjectFramework-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/GroupProjectFramework-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-runners.RegressionRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-runners.RegressionRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-runners.SmokeRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-runners.SmokeRunner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/runners.RegressionRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/runners.RegressionRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/runners.SmokeRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/runners.SmokeRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/dbModels/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/dbModels/UserProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/features/BasicValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/features/BasicValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/runners/RegressionRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/runners/RegressionRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/runners/SmokeRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/runners/SmokeRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/BasicValidationSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/BasicValidationSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/Hooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/DBUtilV2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/EnvironmentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/EnvironmentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/SauceLabsParallel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/SauceLabsParallel.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="29JseudXOsgcjZHtV919sbrgeQc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Oleksanda\Desktop\DevxRemoteServer\Fall2022API\src\test" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4b10d336-af51-47c5-adef-c0a7095bd2e0" name="Changes" comment="" />
+      <created>1652842624428</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652842624428</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
