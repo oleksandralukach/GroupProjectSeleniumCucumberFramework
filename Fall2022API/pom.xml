@@ -39,20 +39,36 @@
         </dependency>
 
         <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>4.3.3</version>
-        </dependency>
-  <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.29</version>
         </dependency>
+
         <dependency>
-            <groupId>common-dbutils</groupId>
-            <artifactId>comm</artifactId>
-            <version>8.0.29</version>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>4.3.3</version>
         </dependency>
+
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>1.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.10.1</version>
+        </dependency>
+<!--Google GSON is a simple Java-based library to serialize Java objects to JSON and
+vice versa. -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson </artifactId>
+            <version>2.8.6</version>
+        </dependency>
+
 
     </dependencies>
 
