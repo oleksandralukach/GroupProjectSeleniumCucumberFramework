@@ -9,8 +9,8 @@
     ##Example table which with Scenario Outline (runs multiple times with different set of data)
     ##Data table that goes under a specific step (runs as 1 set of data)
 
-    Background: get valid authentication bearer token
-      Given the admin user is authenticated
+#    Background: get valid authentication bearer token
+#      Given the admin user is authenticated
 
     Scenario: I should be able to create new individual standard checking account with valid intro deposit
       When I send a following create account payload
@@ -31,9 +31,13 @@
         | 19 | A1   | Open |
 
     Scenario: I should be able to update  account
-        When I send a valid update account payload
+        When I send a following update account payload
+          | id | code | category | name              | mimiDeposit | OverdraftLimit | overdraftFee |
+          | 8  | ScK  | CHK      | Standard Checking | 50          | 25             | 10           |
         Then response status code should be '201'
-        And create account response should be valid
+        And following should be the response payload
+          | id | code | category | name              | mimiDeposit | OverdraftLimit | overdraftFee |
+          | 8  | ScK  | CHK      | Standard Checking | 50          | 25             | 10           |
 
       Scenario: I should be able to read account page
         Then response status code should be '200'

@@ -5,29 +5,103 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b10d336-af51-47c5-adef-c0a7095bd2e0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/ObjectMapperPractice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/Practice2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/PracticePost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/practice/RestAssuredDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/SmokeRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step_defs/BaseDigitalBankSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/step_defs/CheckingAccountSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/CheckingAccount.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/GetAccountOwner.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/food_delivery_requirements.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/practice/RestAssuredDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/CreateAccountPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/TransactionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/beans/TransactionType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/RegressionRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/step_defs/TransactionsSteps.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/logs/groupProject2022-06-15.log" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/dbModels/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/log4jdemo/Log4jDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/step_defs/CalendarClass.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/step_defs/ExtentReportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/step_defs/Parallel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/Files.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/database/DBTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/database/DBUtilV2.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/database/ResultSetHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/data/Book1.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/data/summary.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/data/write_test.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/features/Parallel.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/css/cucumber.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/js/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/js/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/js/moment.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/overview-failures.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/overview-features.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/overview-steps.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/overview-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/report-feature_classpath-features-BasicValidation-feature.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/report-feature_classpath-features-Parallel-feature.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/CucumberReport/cucumber-html-reports/report-tag_Smoke.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/GroupProjectFramework-1.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/reports/report.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/Basic Validation #1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/Basic Validation #2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-Basic Validation #1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-Basic Validation #2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/data/summary.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/data/write_test.xlsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/dbModels/Transaction.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/features/Parallel.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/log4j2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/log4jdemo/Log4jDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/CalendarClass.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/ExtentReportTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/Parallel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/ToTestCommandPrompt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/Files.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/database/DBTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/database/DBUtilV2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/database/DBUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/database/ResultSetHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/drivers/ChromeWebDriver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/drivers/Driver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/src/test/java/base/Base.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/src/test/java/test_cases/GetAllEmployees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/src/test/java/test_cases/SmokeRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/target/PracticeAPI-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/target/test-classes/base/Base.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PracticeAPI/target/test-classes/test_cases/GetAllEmployees.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/food_delivery_requirements.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/food_delivery_requirements.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_defs/BaseDigitalBankSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_defs/BaseDigitalBankSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/step_defs/CheckingAccountSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_defs/CheckingAccountSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/CheckingAccount.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/CheckingAccount.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GetAccountOwner.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/GetAccountOwner.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/pom.xml" afterDir="false" />
@@ -46,25 +120,29 @@
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/SauceLabsParallel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/java/utilities/SauceLabsParallel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/features/BasicValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/src/test/resources/features/BasicValidation.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/GroupProjectFramework-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/GroupProjectFramework-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/GroupProjectFramework-1.0-SNAPSHOT.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/reports/cucumber.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-runners.RegressionRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-runners.RegressionRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-runners.SmokeRunner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-runners.SmokeRunner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/runners.RegressionRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/runners.RegressionRunner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/runners.SmokeRunner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/runners.SmokeRunner.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-runners.RegressionRunner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/TEST-runners.SmokeRunner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/runners.RegressionRunner.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/surefire-reports/runners.SmokeRunner.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/dbModels/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/dbModels/UserProfile.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/features/BasicValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/features/BasicValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/pages/MainPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/pages/MainPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/runners/RegressionRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/runners/RegressionRunner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/runners/SmokeRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/runners/SmokeRunner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/BasicValidationSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/BasicValidationSteps.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/Hooks.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/step_defs/Hooks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/ChromeWebDriver.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/DBUtilV2.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/DBUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/Driver.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/EnvironmentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/EnvironmentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/Helper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/SauceLabsParallel.class" beforeDir="false" afterPath="$PROJECT_DIR$/../GroupProjectFramework/target/test-classes/utilities/SauceLabsParallel.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,11 +169,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Fall2021API-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -252,5 +331,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

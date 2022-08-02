@@ -1,7 +1,7 @@
 Feature: Get a specific accounts owner
 
 #  Background: get valid authentication bearer token
-#    Given the admin user is authenticated
+  # Given the admin user is authenticated
   @smoke
   Scenario: Get existing checking account's owner
     When User looks up for the owner of '206' account

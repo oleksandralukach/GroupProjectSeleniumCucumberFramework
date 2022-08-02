@@ -1,5 +1,6 @@
 package step_defs;
 
+import beans.CreateAccountPayload;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -33,9 +34,9 @@ public class CheckingAccountSteps extends BaseDigitalBankSteps{
 //    }
 
     @When("^I send a following create account payload$")
-    public void i_send_a_following_create_account_payload(List<Map<String, String>> createAccountPayload) {
+    public void i_send_a_following_create_account_payload(List<CreateAccountPayload> createAccountPayload) {
         //JsonPath is a way to extract just the values from a JSON file. JsonPath ia an alternative to using xpath
-        //JsonPath jsonPath = authResponse.jsonPath(); //dont need it as created method inside BasicSteps class
+        //JsonPath jsonPath = response.jsonPath(); //dont need it as created method inside BasicSteps class
        // System.out.println(jsonPath.getString("authToken"));
 
         String URI = "http://3.129.60.236:8080/bank/api/v1/user/75/account";
@@ -50,19 +51,21 @@ public class CheckingAccountSteps extends BaseDigitalBankSteps{
                 .body(createAccountPayload.get(0))
                 .when()
                 .request("POST");
-
-        System.out.println(response.getBody().asPrettyString().contains("name"));
-
     }
 
-
-
     @Then("^following should be the response payload$")
-    public void following_should_be_the_response_payload(List<Map<String, String>> createAccountResponsePayload) {
+    public void following_should_be_the_response_payload(List<CreateAccountPayload> expecteddCreateAccountResponsePayload) {
         //assert each field
         //this how you get expected result (first part of Assert - reading from datatable from your cucumber feature)
-        Assert.assertEquals(createAccountResponsePayload.get(0).get("name"), response.jsonPath().getString("name"));
-        Assert.assertEquals(createAccountResponsePayload.get(0).get("account number"), response.jsonPath().getString("account number"));
+       // Assert.assertEquals(createAccountResponsePayload.get(0).get("name"), response.jsonPath().getString("name"));
+        //Assert.assertEquals(createAccountResponsePayload.get(0).get("account number"), response.jsonPath().getString("account number"));
+
+        String jsonResponse = response.getBody().asPrettyString();
+        CreateAccountPayload actualResponseBody = gson.fromJson(jsonResponse, CreateAccountPayload.class);
+        Assert.assertEquals(expecteddCreateAccountResponsePayload.get(0).getAccountName(),actualResponseBody.getAccountName());
+        Assert.assertEquals(expecteddCreateAccountResponsePayload.get(0).getOpeningDeposit(),actualResponseBody.getOpeningDeposit());
+        Assert.assertEquals(expecteddCreateAccountResponsePayload.get(0).getOwnerTypeCode(),actualResponseBody.getOwnerTypeCode());
+        Assert.assertEquals(expecteddCreateAccountResponsePayload.get(0).getAccountTypeCode(),actualResponseBody.getAccountTypeCode());
 
     }
 
@@ -135,10 +138,24 @@ public class CheckingAccountSteps extends BaseDigitalBankSteps{
         Assert.assertEquals(expectedUserProfileList.get(0).get("country"), response.getBody().jsonPath().getString("userProfile.country"));
     }
 
-
     @Then("^response status code should be '(\\d+)'$")
     public void response_status_code_should_be(int expectedStatusCode) {
         Assert.assertEquals(response.getBody().asPrettyString(), expectedStatusCode, response.getStatusCode());
     }
 
+    @When("^I send a following update account payload$")
+    public void iSendAValidUpdateAccountPayload(List<CreateAccountPayload> createAccountPayload) {
+        String URI = "http://3.129.60.236:8080/bank/api/v1/user/75/account";
+        response = RestAssured
+                .given()
+                .contentType(ContentType.JSON)
+                .accept(ContentType.JSON)
+                .baseUri(URI)
+                //.pathParam("id", "75")//pathParams - in uri - in {}
+                .header("Authorization", "Bearer " + the_admin_user_is_authenticated())
+                //.header("Authorization", "Bearer" + jsonPath.getString("authToken"))
+                .body(createAccountPayload.get(0))
+                .when()
+                .request("PUT");
+    }
 }
